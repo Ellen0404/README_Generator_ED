@@ -4,19 +4,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
 const generateMarkdown = require("./generateMarkdown");
-const api = require("./api");
-const dotenv = require("dotenv");
-const open = require("open");
-const electronHtmlTo = require("electron-html-to");
-const electron = require("electron");
 
-
-// const questions = [
-
-// ];
-
-// function writeToFile(fileName, data) {
-// }
 
 async function init() {
     try {

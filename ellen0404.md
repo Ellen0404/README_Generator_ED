@@ -1,10 +1,9 @@
-function generateMarkdown(data) {
-  return `
-  # ${data.title}
+
+  # Beauty
   [![NPM version](https://david-dm.org/ellen0404/README_Generator_ED.svg)](https://www.npmjs.com/package/markdown-toc)<br>
-  ## Project by<br>![](${data.avatar_url})<br>
-  #### Email adress: ${data.email}<br>
-  ## Overview<br>${data.description}<br>
+  ## Project by<br>![](https://avatars2.githubusercontent.com/u/57367930?v=4)<br>
+  #### Email adress: null<br>
+  ## Overview<br>awsom!<br>
   ## Table of Contents
 
 
@@ -34,7 +33,4 @@ Put here your tests
 Questions
 
   
-  `;
-}
-
-module.exports = generateMarkdown;
+  
