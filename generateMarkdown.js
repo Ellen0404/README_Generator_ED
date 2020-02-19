@@ -2,7 +2,8 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
   [![NPM version](https://david-dm.org/ellen0404/README_Generator_ED.svg)](https://www.npmjs.com/package/markdown-toc)<br>
-  ## Project by<br>![](${data.avatar_url})<br>
+  ## Project by ${data.name}
+  ![](${data.avatar_url})<br>
   #### Email adress: ${data.email}<br>
   ## Overview<br>${data.description}<br>
   ## Table of Contents

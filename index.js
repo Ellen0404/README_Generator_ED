@@ -31,10 +31,11 @@ async function init() {
         // GET GITHUB INFO FROM GITHUB API
         const repo = await axios.get(`https://api.github.com/users/${username}`);
         const { data } = repo;
-        const { avatar_url, email } = data;
+        const { name, avatar_url, email } = data;
 
         // CREATE MARKDOWN FILE
         const markdown = await generateMarkdown({
+            name,
             email,
             avatar_url,
             title,
