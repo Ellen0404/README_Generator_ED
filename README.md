@@ -1,15 +1,26 @@
 # README_Generator_ED
 
+## Overview 
+A command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
+ ```sh
+$ node index.js
+```
+
 ## Table of Contents
 
-- [Installation](#install)
-- [CLI](#cli)
+- [Installation](#Installation)
+- [Questions](#questions)
 
-## Install
+
+## Installation
  ```sh
-$ npm install --save markdown-toc
+$ npm install --inquirer
+$ npm install --axios
 ```
-## CLI
-"sh
-$ npm install --save 
-"
+> ## Questions
+> User will be prompted with a following questions:
+> - GitHub username
+> -  Email adress
+> -  Project Title
+> -  Project Description
+> -  License (the list of licenses will be provided)
