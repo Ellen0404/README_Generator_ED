@@ -17,13 +17,13 @@ function generateMarkdown(data) {
   - [Questions](#Questions)
 
 ## Installation 
- Write info how to install you app
+ Write info how to install your app..
 
 ## Usage
-Write onfo about the usage of your app
+Write info about the usage of your app..
 
 ## License
-Your License info
+${data.license}
 
 ## Contributing
 Contributing info

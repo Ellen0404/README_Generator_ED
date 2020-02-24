@@ -17,6 +17,11 @@ async function init() {
             },
             {
                 type: "input",
+                name: "email",
+                message: "What is your email adress?"
+            },
+            {
+                type: "input",
                 name: "title",
                 message: "What is your Project title?"
             },
@@ -24,14 +29,22 @@ async function init() {
                 type: "input",
                 name: "description",
                 message: "Write your project description here"
+            },
+            {
+                type: "list",
+                message: "What is your License?",
+                name: "license",
+                choices: ["MIT", "GPLv2", "Apache", "other"]
             }
         ]);
 
-        const { username, title, description } = responses;
+
+
+        const { username, email, title, description, license } = responses;
         // GET GITHUB INFO FROM GITHUB API
         const repo = await axios.get(`https://api.github.com/users/${username}`);
         const { data } = repo;
-        const { name, avatar_url, email } = data;
+        const { name, avatar_url } = data;
 
         // CREATE MARKDOWN FILE
         const markdown = await generateMarkdown({
@@ -39,7 +52,8 @@ async function init() {
             email,
             avatar_url,
             title,
-            description
+            description,
+            license
 
         });
 
